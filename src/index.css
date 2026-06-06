@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-void: #020308;
+  --bg-deep: #05070f;
+  --bg-card: rgba(10, 12, 26, 0.85);
+  --border-subtle: rgba(255,255,255,0.08);
+  --text-primary: #f1f5f9;
+  --accent: #a5b4fc;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg-void);
+  color: var(--text-primary);
+  overflow: hidden;
+}
+
+.glass {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  backdrop-filter: blur(20px);
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 16px;
+  font-weight: 500;
+  transition: all 0.2s;
+  background: linear-gradient(145deg, rgba(165,180,252,0.15), rgba(192,132,252,0.1));
+  border: 1px solid rgba(165,180,252,0.3);
+}
+
+.planet-card {
+  transition: all 0.3s ease;
+}
+
+.planet-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
